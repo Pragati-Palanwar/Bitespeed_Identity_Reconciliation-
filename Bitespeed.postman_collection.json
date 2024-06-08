@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "5bc68913-9103-4cc1-9b45-bdb5ee867faf",
+		"name": "Bitespeed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26580138"
+	},
+	"item": [
+		{
+			"name": "Add and identify contacts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"payal@gmail.com\",\r\n    \"phonenumber\":7559459367\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/app/identify/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"identify",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/app/all-contacts/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"all-contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -4,6 +4,7 @@ from django.db.models import Q
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
+
 @api_view(['POST'])
 def identify_contact(request):
     data = request.data
